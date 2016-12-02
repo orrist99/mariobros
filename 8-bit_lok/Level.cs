@@ -40,5 +40,13 @@ namespace _8_bit_lok
             Menu back = new Menu();
             back.Show();
         }
+
+        private void ButLevel3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;//þetta felur formið sem er verið ad spila í 
+            //anað form (victory) byrtist
+            Level3 back = new Level3();
+            back.Show();
+        }
     }
 }

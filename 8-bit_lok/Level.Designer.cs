@@ -83,11 +83,13 @@
             // 
             // ButLevel3
             // 
+            this.ButLevel3.Image = global::_8_bit_lok.Properties.Resources.level3img;
             this.ButLevel3.Location = new System.Drawing.Point(407, 183);
             this.ButLevel3.Name = "ButLevel3";
             this.ButLevel3.Size = new System.Drawing.Size(147, 96);
             this.ButLevel3.TabIndex = 9;
             this.ButLevel3.UseVisualStyleBackColor = true;
+            this.ButLevel3.Click += new System.EventHandler(this.ButLevel3_Click);
             // 
             // label1
             // 

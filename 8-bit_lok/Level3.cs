@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace _8_bit_lok
 {
-    public partial class Level2 : Form
+    public partial class Level3 : Form
     {
         bool right;
         bool left;
@@ -19,10 +19,12 @@ namespace _8_bit_lok
         int force;
         int index = 0;
 
-        public Level2()
+        public Level3()
         {
             InitializeComponent();
         }
+
+
 
         public void Blokk(PictureBox x)//aðferð fyrir block
         {
@@ -45,18 +47,22 @@ namespace _8_bit_lok
             }
 
             if (player.Right > x.Left && player.Left < x.Right - player.Width / 2 && player.Bottom > x.Top)
-                            {
+            {
                 right = false;
-                            }
-            
-                       //vinstri vegur
-                       if (player.Left < x.Right && player.Right > x.Left + player.Width / 2 && player.Bottom > x.Top)
-                            {
+            }
+
+            //vinstri vegur
+            if (player.Left < x.Right && player.Right > x.Left + player.Width / 2 && player.Bottom > x.Top)
+            {
                 left = false;
-                            }
+            }
         }
 
-        
+
+
+
+
+
 
         private void time1_Tick(object sender, EventArgs e)
         {
@@ -91,6 +97,8 @@ namespace _8_bit_lok
             }
 
 
+
+
             if (player.Top + player.Height >= screen.Height)
             {
                 player.Top = screen.Height - player.Height;//fall hættir á bottinum
@@ -107,79 +115,76 @@ namespace _8_bit_lok
                 player.Top += 5;
             }
 
+
             //þegar player dettur í hraunið
-             if (player.Left + player.Width - 1 > lava.Left && player.Left + player.Width + 5 < lava.Left + lava.Width + player.Width && player.Top + player.Height >= lava.Top && player.Top < lava.Top)
-              {
-                  player.Top = screen.Height - lava.Height - player.Height;
-
-
-
-                  if (player.Bounds.IntersectsWith(lava.Bounds)) ;
-                  {
-                      this.Visible = false;//þetta felur formið sem er verið ad spila í 
-                      //anað form (victory) byrtist
-                      time1.Stop();//stopa time one svo kodin runnar ekki þvi annars koma 100x forms
-                      Form2 rip = new Form2();
-                      rip.Show();
-                  }
-              }
-
-
-             //þetta ef fyrir þegar hann nær að klára levelið
-            if (player.Left + player.Width - 1 > endpoint.Left && player.Left + player.Width + 5 < endpoint.Left + endpoint.Width + player.Width && player.Top + player.Height >= endpoint.Top && player.Top < endpoint.Top)
+            if (player.Left + player.Width - 1 > lava.Left && player.Left + player.Width + 5 < lava.Left + lava.Width + player.Width && player.Top + player.Height >= lava.Top && player.Top < lava.Top)
             {
-                player.Top = screen.Height - endpoint.Height - player.Height;
+                player.Top = screen.Height - lava.Height - player.Height;
 
 
 
-                if (player.Bounds.IntersectsWith(endpoint.Bounds)) ;
+                if (player.Bounds.IntersectsWith(lava.Bounds)) ;
                 {
                     this.Visible = false;//þetta felur formið sem er verið ad spila í 
-                                         //anað form (victory) byrtist
+                    //anað form (victory) byrtist
                     time1.Stop();//stopa time one svo kodin runnar ekki þvi annars koma 100x forms
-                    Level3 end = new Level3();
-                    end.Show();
+                    Form2 rip = new Form2();
+                    rip.Show();
                 }
+
             }
 
+                //þetta ef fyrir þegar hann nær að klára levelið
+                if (player.Left + player.Width - 1 > endpoint.Left && player.Left + player.Width + 5 < endpoint.Left + endpoint.Width + player.Width && player.Top + player.Height >= endpoint.Top && player.Top < endpoint.Top)
+                {
+                    player.Top = screen.Height - endpoint.Height - player.Height;
 
 
-            //moving woodenplanks
-            if (block5.Left < this.Width)
-            {
-                block5.Left = block5.Left + 3;
+
+                    if (player.Bounds.IntersectsWith(endpoint.Bounds)) ;
+                    {
+                        this.Visible = false;//þetta felur formið sem er verið ad spila í 
+                        //anað form (victory) byrtist
+                        time1.Stop();//stopa time one svo kodin runnar ekki þvi annars koma 100x forms
+                        Win end = new Win();
+                        end.Show();
+                    }
+                }
+
+                //þetta ef fyrir þegar hann nær að klára levelið
+                //þetta ef fyrir þegar hann nær að klára levelið
+                if (player.Left + player.Width - 1 > endpoint.Left && player.Left + player.Width + 5 < endpoint.Left + endpoint.Width + player.Width && player.Top + player.Height >= endpoint.Top && player.Top < endpoint.Top)
+                {
+                    player.Top = screen.Height - endpoint.Height - player.Height;
+
+
+
+                    if (player.Bounds.IntersectsWith(lava.Bounds)) ;
+                    {
+                        this.Visible = false;//þetta felur formið sem er verið ad spila í 
+                        //anað form (victory) byrtist
+                        time1.Stop();//stopa time one svo kodin runnar ekki þvi annars koma 100x forms
+                        Form2 end = new Form2();
+                        end.Show();
+                    }
+                }
+
+
+                Blokk(pictureBox1);
+                Blokk(block2);
+                Blokk(block3);
+                Blokk(block4);
+                Blokk(block5);
+                Blokk(block6);
+                Blokk(block7);
+                Blokk(block8);
+                Blokk(block9);
+                Blokk(block10);
+
             }
+        
 
-            else
-            {
-                block5.Left = 0;
-            }
-
-
-            if (block6.Left < this.Width)
-            {
-                block6.Left = block6.Left + 3;
-            }
-
-            else
-            {
-                block6.Left = 0;
-            }
-
-
-            //aðferðir
-            Blokk(block1);
-            Blokk(block2);
-            Blokk(block3);
-            Blokk(block4);
-            Blokk(block5);
-            Blokk(block6);
-
-
-        }
-
-
-        private void Level2_KeyDown(object sender, KeyEventArgs e)
+        private void Level3_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Right)
             {
@@ -212,7 +217,7 @@ namespace _8_bit_lok
 
         }
 
-        private void Level2_KeyUp(object sender, KeyEventArgs e)
+        private void Level3_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Right)
             {
@@ -231,9 +236,20 @@ namespace _8_bit_lok
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
 
-        }
+
+        
+
+
+            
+
+        
+
+        
+     
+
+   
     }
 }
+
+

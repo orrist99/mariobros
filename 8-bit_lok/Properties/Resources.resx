@@ -127,6 +127,9 @@
   <data name="fireworks2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fireworks2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cblocksized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cblocksized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backgroundtest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundtest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +174,9 @@
   </data>
   <data name="marioworld1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marioworld1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cblock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cblock1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bush2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bush2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,6 +241,9 @@
   <data name="sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sky.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cblock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cblock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sun1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sun1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -258,6 +267,9 @@
   </data>
   <data name="rock3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rock3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mario2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mario2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,7 +328,7 @@
   <data name="Blueblock5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blueblock5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RightArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RightArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="level3img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\level3img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

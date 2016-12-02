@@ -78,6 +78,12 @@
     <Compile Include="Level2.Designer.cs">
       <DependentUpon>Level2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Level2.resx">
       <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -333,6 +342,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\RightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cblock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cblocksized.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

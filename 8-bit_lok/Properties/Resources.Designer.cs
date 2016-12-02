@@ -163,6 +163,36 @@ namespace _8_bit_lok.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cblock {
+            get {
+                object obj = ResourceManager.GetObject("cblock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cblock1 {
+            get {
+                object obj = ResourceManager.GetObject("cblock1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cblocksized {
+            get {
+                object obj = ResourceManager.GetObject("cblocksized", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cloud {
             get {
                 object obj = ResourceManager.GetObject("cloud", resourceCulture);
@@ -366,6 +396,16 @@ namespace _8_bit_lok.Properties {
         internal static System.Drawing.Bitmap Level2sized {
             get {
                 object obj = ResourceManager.GetObject("Level2sized", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap level3img {
+            get {
+                object obj = ResourceManager.GetObject("level3img", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
