@@ -4,8 +4,8 @@ MarioBros er verkefnið það sem ég (Aron Tanatíp) og Orri steinn unnum í.
 
 Verkskiftingin fór þanning að ég (Aron Tanatíp) sá mest um að kóða verkefnið á meðan hann orri sá um myndirnar með photoshop ofl. Við skiptum verkum á milli okkar þegar við vorum að designa level þar sem hann orri designaði level 3 og ég designaði level 2 en við báðir designuðum level 1 þvi það var fyrsta levelið.
 
-#Vegna einhverju veseni með git eða github þurftum við að búa til nytt git á föstudaginn  2.des sem var bara notað til að commita level 3 og nokkur fix í menu annars er allt í gamla githubinu okkar.
--------------------------------------------------------------------------
+#Vegna einhverju veseni með git eða github þurftum við að búa til nytt git á föstudaginn  2.des sem var bara notað til að commita level 3 og nokkur fix í menu annars er allt á gamla githubinu okkar.
+------------------------------------------------------------------------
 Dagbók
 
 nóv 21: fyrsti dagurinn okkar fór helst í að afla okkur upplýsingar fyrir verkefnið t.d hverning maður ætti að búa til leik í C# með windowsform.
